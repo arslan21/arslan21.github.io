@@ -1,4 +1,5 @@
 'use strict';
+
 var popup = document.querySelector('.arrival')
 var popupButton = popup.querySelector('.button-arrival');
 var searchButton = document.querySelector('.button-search');
@@ -24,14 +25,6 @@ var options = {
 function dateFormat(date) {
   return date.toLocaleString("ru", options)
 };
-//
-// function onSearchButtonOpenClick() {
-//   openPopup();
-// }
-//
-// function onSearchButtonCloseClick() {
-//   closePopup();
-// }
 
 popupInputs.forEach(function (item, evt) {
   item.addEventListener('keydown', onInputEscPress);
@@ -39,7 +32,7 @@ popupInputs.forEach(function (item, evt) {
 
 searchButton.addEventListener('click', openPopup);
 
-searchButton.addEventListener('keydown', onSearchButtonEnterPress(evt));
+searchButton.addEventListener('keydown', onSearchButtonEnterPress);
 
 function onSearchButtonEnterPress(evt) {
   if (evt.keyCode === ENTER_KEYCODE) {
@@ -60,7 +53,6 @@ function onInputEscPress(evt) {
 };
 
 function openPopup() {
-  debugger;
   popup.classList.remove('arrival-close');
   popupInputs[0].focus();
   checkinInput.value = dateFormat(checkinDate);
@@ -72,13 +64,11 @@ function openPopup() {
 };
 
 function closePopup() {
-  debugger;
   popup.classList.add('arrival-close');
   document.removeEventListener('keydown', onPopupEscPress);
   searchButton.removeEventListener('click', closePopup);
   searchButton.addEventListener('click', openPopup);
   searchButton.addEventListener('keydown', onSearchButtonEnterPress(evt));
-  // searchButton.addEventListener('click', openPopup)
 };
 
 
