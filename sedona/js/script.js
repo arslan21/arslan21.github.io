@@ -1,4 +1,5 @@
 'use strict';
+
 var popup = document.querySelector('.arrival')
 var popupButton = popup.querySelector('.button-arrival');
 var searchButton = document.querySelector('.button-search');

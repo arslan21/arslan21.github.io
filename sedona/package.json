@@ -1,0 +1,24 @@
+{
+  "name": "sedona",
+  "version": "1.0.0",
+  "description": "HTML Academy",
+  "main": "script.js",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "nouislider": "^13.1.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arslan21/364873-sedona.git"
+  },
+  "author": "arslan21",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arslan21/364873-sedona/issues"
+  },
+  "homepage": "https://github.com/arslan21/364873-sedona#readme"
+}
