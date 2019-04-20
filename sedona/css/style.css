@@ -340,6 +340,7 @@ a {
 }
 
 .button-search {
+  border: 0;
   margin: auto;
   margin-top: 47px;
   width: 568px;
