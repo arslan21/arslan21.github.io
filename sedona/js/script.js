@@ -68,7 +68,7 @@ function closePopup() {
   document.removeEventListener('keydown', onPopupEscPress);
   searchButton.removeEventListener('click', closePopup);
   searchButton.addEventListener('click', openPopup);
-  searchButton.addEventListener('keydown', onSearchButtonEnterPress(evt));
+  searchButton.addEventListener('keydown', onSearchButtonEnterPress);
 };
 
 
