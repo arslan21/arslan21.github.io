@@ -3,7 +3,7 @@
 (function () {
   var LOAD_URL = 'https://js.dump.academy/keksobooking/data';
   var SAVE_URL = 'https://js.dump.academy/keksobooking';
-  var xhrTimeout = 1000;
+  var xhrTimeout = 10000;
 
   function setup(onLoad, onError) {
     var xhr = new XMLHttpRequest();
