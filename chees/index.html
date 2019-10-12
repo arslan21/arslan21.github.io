@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>chees</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+  </head>
+  <body class="body">
+    <!-- <section class="wraper"> -->
+      <table class="table" id="chess">
+        <tr>
+          <td class="name"></td>
+          <td class="name colName">A</td>
+          <td class="name colName">B</td>
+          <td class="name colName">C</td>
+          <td class="name colName">D</td>
+          <td class="name colName">E</td>
+          <td class="name colName">F</td>
+          <td class="name colName">G</td>
+          <td class="name colName">H</td>
+          <td class="name"></td>
+        </tr>
+        <tr>
+          <td class="name rowName">8</td>
+          <td class="cell whiteCell" id="A8" v-on:click="showResult"></td>
+          <td class="cell blackCell" id="B8" v-on:click="showResult"></td>
+          <td class="cell whiteCell" id="C8" v-on:click="showResult"></td>
+          <td class="cell blackCell" id="D8" v-on:click="showResult"></td>
+          <td class="cell whiteCell" id="E8" v-on:click="showResult"></td>
+          <td class="cell blackCell" id="F8" v-on:click="showResult"></td>
+          <td class="cell whiteCell" id="G8" v-on:click="showResult"></td>
+          <td class="cell blackCell" id="H8" v-on:click="showResult"></td>
+          <td class="name rowName">8</td>
+        </tr>
+        <tr>
+          <td class="name rowName">7</td>
+          <td class="cell blackCell" id="A7" v-on:click="showResult"></td>
+          <td class="cell whiteCell" id="B7" v-on:click="showResult"></td>
+          <td class="cell blackCell" id="C7" v-on:click="showResult"></td>
+          <td class="cell whiteCell" id="D7" v-on:click="showResult"></td>
+          <td class="cell blackCell" id="E7" v-on:click="showResult"></td>
+          <td class="cell whiteCell" id="F7" v-on:click="showResult"></td>
+          <td class="cell blackCell" id="G7" v-on:click="showResult"></td>
+          <td class="cell whiteCell" id="H7" v-on:click="showResult"></td>
+          <td class="name rowName">7</td>
+        </tr>
+        <tr>
+          <td class="name rowName">6</td>
+          <td class="cell whiteCell" id="A6" v-on:click="showResult"></td>
+          <td class="cell blackCell" id="B6" v-on:click="showResult"></td>
+          <td class="cell whiteCell" id="C6" v-on:click="showResult"></td>
+          <td class="cell blackCell" id="D6" v-on:click="showResult"></td>
+          <td class="cell whiteCell" id="E6" v-on:click="showResult"></td>
+          <td class="cell blackCell" id="F6" v-on:click="showResult"></td>
+          <td class="cell whiteCell" id="G6" v-on:click="showResult"></td>
+          <td class="cell blackCell" id="H6" v-on:click="showResult"></td>
+          <td class="name rowName">6</td>
+        </tr>
+        <tr>
+          <td class="name rowName">5</td>
+          <td class="cell blackCell" id="A5" v-on:click="showResult"></td>
+          <td class="cell whiteCell" id="B5" v-on:click="showResult"></td>
+          <td class="cell blackCell" id="C5" v-on:click="showResult"></td>
+          <td class="cell whiteCell" id="D5" v-on:click="showResult"></td>
+          <td class="cell blackCell" id="E5" v-on:click="showResult"></td>
+          <td class="cell whiteCell" id="F5" v-on:click="showResult"></td>
+          <td class="cell blackCell" id="G5" v-on:click="showResult"></td>
+          <td class="cell whiteCell" id="H5" v-on:click="showResult"></td>
+          <td class="name rowName">5</td>
+        </tr>
+        <tr>
+          <td class="name rowName">4</td>
+          <td class="cell whiteCell" id="A4" v-on:click="showResult"></td>
+          <td class="cell blackCell" id="B4" v-on:click="showResult"></td>
+          <td class="cell whiteCell" id="C4" v-on:click="showResult"></td>
+          <td class="cell blackCell" id="D4" v-on:click="showResult"></td>
+          <td class="cell whiteCell" id="E4" v-on:click="showResult"></td>
+          <td class="cell blackCell" id="F4" v-on:click="showResult"></td>
+          <td class="cell whiteCell" id="G4" v-on:click="showResult"></td>
+          <td class="cell blackCell" id="H4" v-on:click="showResult"></td>
+          <td class="name rowName">4</td>
+        </tr>
+        <tr>
+          <td class="name rowName">3</td>
+          <td class="cell blackCell" id="A3" v-on:click="showResult"></td>
+          <td class="cell whiteCell" id="B3" v-on:click="showResult"></td>
+          <td class="cell blackCell" id="C3" v-on:click="showResult"></td>
+          <td class="cell whiteCell" id="D3" v-on:click="showResult"></td>
+          <td class="cell blackCell" id="E3" v-on:click="showResult"></td>
+          <td class="cell whiteCell" id="F3" v-on:click="showResult"></td>
+          <td class="cell blackCell" id="G3" v-on:click="showResult"></td>
+          <td class="cell whiteCell" id="H3" v-on:click="showResult"></td>
+          <td class="name rowName">3</td>
+        </tr>
+        <tr>
+          <td class="name rowName">2</td>
+          <td class="cell whiteCell" id="A2" v-on:click="showResult"></td>
+          <td class="cell blackCell" id="B2" v-on:click="showResult"></td>
+          <td class="cell whiteCell" id="C2" v-on:click="showResult"></td>
+          <td class="cell blackCell" id="D2" v-on:click="showResult"></td>
+          <td class="cell whiteCell" id="E2" v-on:click="showResult"></td>
+          <td class="cell blackCell" id="F2" v-on:click="showResult"></td>
+          <td class="cell whiteCell" id="G2" v-on:click="showResult"></td>
+          <td class="cell blackCell" id="H2" v-on:click="showResult"></td>
+          <td class="name rowName">2</td>
+        </tr>
+        <tr>
+          <td class="name rowName">1</td>
+          <td class="cell blackCell" id="A1" v-on:click="showResult"></td>
+          <td class="cell whiteCell" id="B1" v-on:click="showResult"></td>
+          <td class="cell blackCell" id="C1" v-on:click="showResult"></td>
+          <td class="cell whiteCell" id="D1" v-on:click="showResult"></td>
+          <td class="cell blackCell" id="E1" v-on:click="showResult"></td>
+          <td class="cell whiteCell" id="F1" v-on:click="showResult"></td>
+          <td class="cell blackCell" id="G1" v-on:click="showResult"></td>
+          <td class="cell whiteCell" id="H1" v-on:click="showResult"></td>
+          <td class="name rowName">1</td>
+        </tr>
+        <tr>
+          <td class="name"></td>
+          <td class="name colName">A</td>
+          <td class="name colName">B</td>
+          <td class="name colName">C</td>
+          <td class="name colName">D</td>
+          <td class="name colName">E</td>
+          <td class="name colName">F</td>
+          <td class="name colName">G</td>
+          <td class="name colName">H</td>
+          <td class="name"></td>
+        </tr>
+      </table>
+    <!-- </section> -->
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
