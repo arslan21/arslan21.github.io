@@ -4,7 +4,7 @@
   "description": "HTML Academy",
   "main": "script.js",
   "dependencies": {
-    "jquery": "^3.2.1",
+    "jquery": "^3.5.0",
     "nouislider": "^13.1.4"
   },
   "devDependencies": {},
